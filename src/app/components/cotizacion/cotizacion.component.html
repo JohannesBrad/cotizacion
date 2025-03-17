@@ -1,0 +1,36 @@
+<div class="container-lg mt-4">
+    <h2 class="text-center mb-4">Cotización del Dólar en Argentina</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover text-center align-middle">
+            <thead class="table-primary">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Valor</th>
+                    <th>Compra (ARS)</th>
+                    <th>Venta (ARS)</th>
+                    <th>Valor Sol peruano (S/.)</th>
+                    <th>Valor Sol peruano (S/.)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-light">
+                    <td><strong>Dólar Oficial</strong></td>
+                    <td>USD 1</td>
+                    <td>${{ dolarOficial.value_buy }}</td>
+                    <td>${{ dolarOficial.value_sell }}</td>
+                    <td class="table-light">S/. {{ solPeruanoCompra | number:'1.2-2' }}</td>
+                    <td class="table-light">S/. {{ solPeruanoVenta | number:'1.2-2' }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Dólar Blue</strong></td>
+                    <td>USD 1</td>
+                    <td>${{ dolarBlue.value_buy }}</td>
+                    <td>${{ dolarBlue.value_sell }}</td>
+                    <td class="table-light">S/. {{ solPeruanoCompraBlue | number:'1.2-2' }}</td>
+                    <td class="table-light">S/. {{ solPeruanoVentaBlue | number:'1.2-2' }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
